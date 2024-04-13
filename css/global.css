@@ -1,0 +1,22 @@
+body{
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  
+    background: linear-gradient(
+      45deg,
+      #7134db,
+      #2ecc71
+    ); /* Gradient background */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+     /* Rounded corners */
+    
+    
+}
+body .dark-light{
+    position: relative;
+    text-align: right;
+    margin-right: 10px;
+}
+body #input:checked{
+    background-color: black;
+}
