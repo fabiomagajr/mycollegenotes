@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:wght@300&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="titles">
+        <h3>O que é IPv4</h3>
+    </div>
+    <div class="texts">
+        <p> &emsp;O Protocolo de Internet versão 4 (IPv4) é uma das bases fundamentais da 
+            comunicação de rede, tanto na Internet quanto em redes privadas. Ele define a 
+            maneira como os dispositivos se identificam e se comunicam uns com os outros em 
+            uma rede. Cada dispositivo conectado a uma rede que utiliza o IPv4 é atribuído um 
+            <span style="color: red;"><strong>endereço IP</strong></span> único, que serve como sua identificação exclusiva na rede.</p>
+    </div>
+    <div class="pics">
+        <img src="../assets/img/ipv4/ip.png" alt="ipv4_img">
+    </div>
+    <div class="titles">
+        <h3>Características do IPv4</h3>
+    </div>
+    <div class="texts">
+        <p>
+            &emsp;Os endereços IPv4 são compostos por 32 bits, divididos em quatro octetos, e 
+            são expressos em notação decimal separada por pontos. Por exemplo, um endereço 
+            IPv4 típico é 192.168.0.1. Esses endereços permitem que os dispositivos se 
+            comuniquem entre si, roteando pacotes de dados de origem para destino através de 
+            uma série de roteadores e redes intermediárias. <br>
+        </p>
+    </div>
+    <div class="pics">
+        <img src="../assets/img/ipv4/anatomy.jpg" alt="">
+    </div>
+    <div class="texts">
+        <p>
+            &emsp;O IPv4 opera de forma não confiável, o que significa que não há garantia de 
+            que os pacotes de dados chegarão ao seu destino ou de que chegarão na ordem 
+            correta. Ele fornece um serviço de entrega de pacotes básico, deixando a garantia de 
+            entrega e a ordenação dos dados para protocolos de nível superior, como o TCP 
+            (Transmission Control Protocol). <br> <br>
+            &emsp;Cada pacote de dados IPv4 contém um cabeçalho que inclui informações 
+            cruciais para o roteamento e entrega dos pacotes. Este cabeçalho contém campos 
+            como endereço de origem, endereço de destino, tamanho do pacote, tipo de serviço, 
+            identificação, flags de controle, tempo de vida (TTL) e outros parâmetros relevantes 
+            para o funcionamento do protocolo. <br> 
+            <div class="pics">
+                <img src="../assets/img/ipv4/nat.jpg" alt="">
+            </div>
+            &emsp;Devido ao esgotamento gradual dos endereços IPv4 disponíveis, várias 
+            técnicas foram desenvolvidas para mitigar esse problema. Uma delas é o NAT 
+            (Network Address Translation), que permite que vários dispositivos em uma rede 
+            privada compartilhem um único endereço IP público, traduzindo os endereços IP 
+            privados dos dispositivos em endereços IP públicos quando se comunicam pela 
+            Internet. <br> <br>
+            &emsp;Entretanto, mesmo com o NAT, o esgotamento dos endereços IPv4 se tornou 
+            um desafio significativo à medida que a Internet cresceu. Como solução para esse 
+            problema, foi desenvolvido o Protocolo de Internet versão 6 (IPv6), que oferece um
+            espaço de endereço muito maior, com 128 bits, permitindo um número praticamente 
+            ilimitado de endereços únicos e garantindo a continuidade da expansão da Internet e 
+            das redes conectadas a ela
+        </p>
+        
+    </div>
+    <div class="titles">
+        <h3>Configuração do protocolo IPv4</h3>
+    </div>
+    
+    <div class="texts">
+        <p>
+            <strong>Configuração Manual (Estática):</strong> <br> 
+            &emsp;Neste método, os endereços IP são 
+            configurados manualmente em cada dispositivo na rede. O administrador de rede 
+            atribui um endereço IP único para cada dispositivo, garantindo que não haja conflitos 
+            de endereço. É adequado para redes pequenas e estáticas, onde o número de 
+            dispositivos é limitado e as alterações na configuração são raras.
+            
+        </p>
+    </div>
+    <div class="pics">
+        <img src="../assets/img/ipv4/ipv4.png" alt="">
+    </div>
+    <div class="texts">
+        <p>
+            <strong>Configuração Automática (DHCP - Dynamic Host Configuration Protocol):</strong> <br> 
+            &emsp; ODHCP é um protocolo de rede que permite que os dispositivos obtenham 
+            automaticamente um endereço IP e outras configurações de rede, como máscara de 
+            sub-rede, gateway padrão e servidores DNS. Um servidor DHCP na rede atribui 
+            dinamicamente endereços IP disponíveis a dispositivos que solicitam conexão à rede.
+            Esse método é altamente escalável e conveniente para redes de médio a grande 
+            porte, pois simplifica a administração de endereços IP e permite a rápida adição ou 
+            remoção de dispositivos da rede.
+
+        </p>
+    </div>
+    <div class="pics">
+        <img src="../assets/img/ipv4/automatic.png" alt="">
+    </div>
+    <div class="texts">
+        <ul style="list-style: circle;">
+            <li>IPv4</li>
+            <li style="list-style: inside circle;">DHCP</li>
+            <li style="list-style: inside circle;"><span style="text-decoration:line-through;">DNS</span></li>
+            <li><span style="text-decoration:line-through;">IPv6</span></li>
+            <li><strong style="color: orangered;">NAT</strong></li>
+            <li>APIPA</li>
+        </ul>
+    </div>
+</body>
+</html>
