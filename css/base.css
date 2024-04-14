@@ -20,7 +20,7 @@ body {
 
  .titles{
     margin-left: 60px;
-    font-size: 45px;
+    font-size: 40px;
     color: darkblue;
     width: 100%;
     
@@ -29,7 +29,8 @@ body {
 
  .texts{
     margin-left: 60px;
-    font-size: 21px
+    font-size: 21px;
+    tab-size: 4;
  }
 
  .pics{
@@ -39,6 +40,7 @@ body {
  .pics img{
     
     max-height: 200px;
+    max-width: 250px;
     margin-bottom: 10px;
     margin-left: 30px;
  }
